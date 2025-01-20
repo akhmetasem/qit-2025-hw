@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="loadDogImage" style="position: absolute; margin-left:750px; margin-top: 200px; padding: 10px 20px; font-size: 16px;">Загрузить изображение собаки</button>
+    <div style="position: absolute; margin-left:737px; margin-top: 250px;  " id="imageContainer"></div>
+    <script>
+    const apiUrl = 'https://dog.ceo/api/breeds/image/random';
+    const button = document.getElementById('loadDogImage');
+    const imageContainer = document.getElementById('imageContainer');
+
+async function loadDogImage() {
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error('ne удалось получить изображение');
+    }
+    const data = await response.json();
+
+    // Очищаем контейнер, чтобы удалять старые изображения
+    imageContainer.innerHTML = '';
+
+    // Создаем элемент <img> и добавляем изображение собаки
+    const imgElement = document.createElement('img');
+    imgElement.src = data.message;
+    imgElement.alt = 'Собака';
+    imgElement.style.width = '300px';
+    imageContainer.appendChild(imgElement);
+  } catch (error) {
+    console.error('Ошибка:', error);
+    imageContainer.innerHTML = '<p>ne удалось загрузить изображение собаки.</p>';
+  }
+}
+
+// Добавляем обработчик события для кнопки
+button.addEventListener('click', loadDogImage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+    
+}
+#checkWeather{
+    border: 2px solid blue;
+}
+#checkWeather:hover{
+    border: 1px solid rgb(55, 55, 110);
+}
+#checkWeather{
+    font-size: 1rem;
+}
