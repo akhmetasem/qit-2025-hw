@@ -1,0 +1,80 @@
+#nav-bar{
+    margin: 30px;
+    background-color: rgb(231, 229, 229);
+    box-shadow: 5px gray;
+}
+#nav-bar h3{
+    text-align: center;
+    padding: 30px;
+    border: 1px solid  rgb(231, 229, 229);
+    background-color: white;
+    font-size: 1.5rem;
+    
+}
+#nav-bar img{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+}
+#skip{
+    border: 6px solid rgb(10, 37, 155);
+    border-radius: 5px;
+    background-color: rgb(10, 37, 155);
+    font-size: 1rem;
+    color: white;
+}
+#timer{
+    border-radius: 90px;
+    border: 1px solid rgb(83, 14, 148);
+    background-color: rgb(83, 14, 148);
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+}
+#btn1{
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid red;
+    height: 70px;
+    width: 700px;
+    background-color: red;
+    border-radius: 5px;
+}
+#btn2{
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid rgb(189, 178, 25);
+    height: 70px;
+    width: 570px;
+    background-color:rgb(177, 131, 4);
+    border-radius: 5px;
+}
+#btn3{
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid rgb(22, 66, 161);
+    height: 70px;
+    width: 700px;
+    background-color: rgb(22, 66, 161);
+    border-radius: 5px;
+}
+#btn4{
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid rgb(10, 143, 10) ;
+    height: 70px;
+    width: 570px;
+    background-color: rgb(10, 143, 10);
+    border-radius: 5px;
+}
+#container{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 2fr);
+}
+#container2{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-left: 50px;
+}
