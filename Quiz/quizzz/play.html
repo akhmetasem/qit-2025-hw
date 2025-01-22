@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="play.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game">
+            <h2 id="question">Сұрақ жүктеледі...</h2>
+            <div class="choice-container">
+                <p class="choice-text" data-number="1">Жауап 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-text" data-number="2">Жауап 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-text" data-number="3">Жауап 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-text" data-number="4">Жауап 4</p>
+            </div>
+        </div>
+        <div id="progress">
+            <p>Сұрақ <span id="questionCounter">0</span>/<span id="maxQuestions">0</span></p>
+            <p>Ұпай: <span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="play.js"></script>
+</body>
+</html>
