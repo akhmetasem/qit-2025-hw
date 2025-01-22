@@ -1,0 +1,168 @@
+:root{
+    background-color: white;
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.starter{
+    border-radius: 4px;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 190px;
+    position: absolute;
+}
+.btn{
+    padding: 4px;
+    
+    background-color: rgb(98, 13, 124);
+    color: white;
+    border: 2px solid red;
+    border-radius: 100px;
+}
+
+header {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c; 
+    background-image: url('https://i.pinimg.com/736x/b8/83/36/b883366481a0222644f56e713edd33bd.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.neon-text {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.neon-text::before,
+.neon-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    z-index: -1;
+    animation: glow 1.5s infinite alternate;
+}
+
+.neon-text::before {
+    border-color: #ff007c;
+    filter: blur(5px);
+}
+
+.neon-text::after {
+    border-color: #00fff9;
+    filter: blur(15px);
+}
+
+.neon-text span {
+    background: linear-gradient(90deg, #ff007c, #00fff9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* Барлық бетке нөлдік қашықтық беру */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Контейнер стилі */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Экранның биіктігін толық алады */
+    overflow: hidden;
+}
+
+/* Видео стилі */
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Видеоны контейнерге сыйғызу */
+}
+
+/* Текст қабаты */
+.video-container .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Мәтіннің түсі */
+    text-align: center;
+    z-index: 1; /* Текст видеодан жоғары болуы үшін */
+}
+
+.video-container .overlay-text h1 {
+    font-size: 3rem; /* Үлкенірек мәтін */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Жарық беру */
+}
+
+.video-container .overlay-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+
+.image-container img {
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+    filter: grayscale(100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.image-container{
+   background-image: url(https://i.pinimg.com/736x/25/ba/e3/25bae3f23c2216b695d9efe899b5b840.jpg);
+    display: flex;
+    justify-content:flex-end
+}
+.image-container:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.image-container p{
+    margin: 10px 10px;
+    margin-top: 200px;
+    color: rgb(100, 6, 6);
+    font-size: 3rem;
+}
+
+
+
+
+@keyframes glow {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
