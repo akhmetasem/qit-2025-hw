@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="color">
+        <h2>Түс таңдау</h2>
+        <h6>Түс таңдаңыз:</h6>
+        <input type="color" id="colorInput" name="color">
+        <button onclick="saveData()">Сақтау</button>
+        <button onclick="removeData()">Тазарту</button>
+    </div>
+
+    <script>
+        function colorData() {
+            const savedColor = sessionStorage.getItem("selectedColor");
+            if (savedColor) {
+                document.getElementById("colorInput").value = savedColor;
+                document.body.style.backgroundColor = savedColor;
+            }
+        };
+
+       
+        function saveData() {
+            const color = document.getElementById("colorInput").value;
+            sessionStorage.setItem("selectedColor", color);
+            document.body.style.backgroundColor = color;
+            alert("Түс сақталды");
+        }
+
+        
+        function removeData() {
+            sessionStorage.removeItem("selectedColor");
+            document.getElementById("colorInput").value = "#ffffff"; 
+            document.body.style.backgroundColor = "#ffffff";
+            alert("Түс тазартылды");
+        }
+    </script>
+</body>
+</html>
