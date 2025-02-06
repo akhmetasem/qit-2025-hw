@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(6, 6, 59);
+    background-image: url("https://i.pinimg.com/736x/4e/6e/70/4e6e70b3c75a7d99ea18ac5fe0d3ca6c.jpg");
+}
+
+
+.logo {
+    display: flex;
+
+    width: 80px;
+    height: 50px;
+}
+
+ main {
+    margin: 70px 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+
+ main span {
+    display: flex;
+    align-items: center;
+ }
+.login {
+  background-color: rgb(163, 162, 162);
+    border:1px solid rgb(178, 178, 212);
+    border-radius: 10px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 30px;
+  
+}
+
+ 
+.login:hover {
+    background-image: url("https://i.pinimg.com/736x/4e/6e/70/4e6e70b3c75a7d99ea18ac5fe0d3ca6c.jpg");
+    background-color: rgb(170, 190, 228);
+}
+form input {
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.sign {
+    border-radius:5px;
+    width: 200px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    transition: 1s;
+}
+.sign:hover {
+    background-color: rgb(37, 82, 165);
+}
+footer p,a { 
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    height: 500px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}

@@ -1,0 +1,51 @@
+body {
+    background-image: url("https://i.pinimg.com/736x/db/4d/36/db4d3610790d7a41dc529eb46f2698ef.jpg");
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.weather-app {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-image: url("https://i.pinimg.com/736x/ca/f6/3c/caf63c947147fc1246f3f4a5352a671e.jpg");
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #021324;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1c3f64;
+}
+
+.weather-info {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.hourly-forecast {
+    margin-top: 20px;
+}
+
+.hourly-item {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}

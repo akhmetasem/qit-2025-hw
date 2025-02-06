@@ -1,0 +1,46 @@
+body{
+    background-image: url("https://i.pinimg.com/736x/66/25/4c/66254cb834624dd8030f93db361a7d24.jpg");
+}
+#container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(241, 234, 234);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #661a1a;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+button {
+    background-color: #24269b;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0e376d;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #093063;
+}
