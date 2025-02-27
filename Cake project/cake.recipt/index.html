@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="emage.jpg" alt="">
+            <h1>SWITE_CAKE</h1>
+        </div>
+        <nav class="navbar">
+            <a href="../cake.card/index.html">Сake shop🛒</a>
+            <a href="../cake.list/index.html">Recipe📝</a>
+            <a href="../cake.input/index.html">Blogs✍️</a>
+            <a href="../cake.calc/index.html">SweetCalc✨ </a>
+            <a href="../cakes/index.html">Sweetry 🍰</a>
+            <a href="../cake.zakaz/cake.html">Orderify 🛍️</a>
+            <a href="../cake.recipt/index.html">Recipt📝</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Красный бархат</h1>
+        <img src="https://i.pinimg.com/736x/24/11/10/241110c86412bd5e20e793ca083a045f.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="2.5"></span> 250г ұн</li>
+            <li><span recipt="3"></span> 300г қант</li>
+            <li><span recipt="1"></span> 1 шай қасық какао ұнтағы</li>
+            <li><span recipt="1"></span>1 шай қасық ас содасы</li>
+            <li><span recipt="1"></span> 1 шай қасық разрыхлитель</li>
+            <li><span recipt="1"></span> 1 шай қасық тұз</li>
+            <li><span recipt="2"></span> 2 жұмыртқа</li>
+            <li><span recipt="2"></span> 200 мл өсімдік майы</li>
+            <li><span recipt="2.5"></span> 250 мл айран немесе сүтке араластырылған 1 ас қасық сірке суы</li>
+            <li><span recipt="1"></span> 1 шай қасық ваниль экстракты</li>
+            <li><span recipt="1"></span> 1 шай қасық қызыл гель бояуы</li>
+            <h3>Кремге</h3>
+            <li><span recipt="3"></span> 300 г крем-сыр (маскарпоне немесе филадельфия)</li>
+            <li><span recipt="1.5"></span> 150 г сары май (бөлме температурасында)</li>
+            <li><span recipt="1"></span> 100 г қант ұнтағы</li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Сникерс торт</h1>
+        <img src="https://i.pinimg.com/736x/67/ce/a0/67cea0feed173ad33f29b0902b417960.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="2.5"></span> 120 г ұн</li>
+            <li><span recipt="1"></span> 30 г какао ұнтағы</li>
+            <li><span recipt="4"></span> 4 жұмыртқа</li>
+            <li><span recipt="2"></span> 150 г қант</li>
+            <li><span recipt="1"></span> 1 шай қасық (5г) разрыхлитель</li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="0.5"></span> 250 г кремді ірімшік (маскарпоне немесе филадельфия)</li>
+            <li><span recipt="1"></span> 100 г тұздалған жержаңғақ</li>
+            <li><span recipt="0.2"></span> 200 мл қоюлатылған сүт (сгущенка)</li>
+            <h4>Глазурь:</h4>
+            <li><span recipt="1"></span> 100 г қара шоколад</li>
+            <li><span recipt="0.5"></span> 50 мл кілегей</li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Орео торты</h1>
+        <img src="https://i.pinimg.com/736x/90/ae/03/90ae036713c2376af67cffc4fb5e41c0.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="2"></span>200 г Oreo печеньесі (ұсақталған) </li>
+            <li><span recipt="4"></span>4 жұмыртқа </li>
+            <li><span recipt="1"></span>100 г қант </li>
+            <li><span recipt="1"></span>100 г ұн </li>
+            <li><span recipt="0.3"></span>30 г какао </li>
+            <li><span recipt="1"></span>1 шай қасық (5 г) разрыхлитель </li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="25"></span>250 г кремді ірімшік (маскарпоне немесе филадельфия) </li>
+            <li><span recipt="0.02"></span>200 мл кілегей (33-35%) </li>
+            <li><span recipt="1"></span>100 г қант ұнтағы </li>
+            <li><span recipt="0.5"></span>100 г ұсақталған Oreo </li>
+            <h4>Глазурь:</h4>
+            <li><span recipt="1"></span>100 г ақ шоколад </li>
+            <li><span recipt="0.5"></span>50 мл кілегей</li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Три школада торты</h1>
+        <img src="https://i.pinimg.com/736x/cc/c7/b8/ccc7b8085963303414110d6a59eeeeac.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="2"></span>2 жұмыртқа</li>
+            <li><span recipt="0.8"></span>80 г қант</li>
+            <li><span recipt="0.6"></span>60 г ұн</li>
+            <li><span recipt="0.2"></span>20 г какао</li>
+            <li><span recipt="1"></span>1 шай қасық разрыхлитель</li>
+            
+            <h3>Қара шоколадты мусс::</h3>
+            <li><span recipt="1"></span>100 г қара шоколад </li>
+            <li><span recipt="0.2"></span>200 мл кілегей (33-35%) </li>
+            <li><span recipt="0.3"></span>5 г желатин + 30 мл су</li>
+            <h4>Сүтті шоколадты мусс:</h4>
+            <li><span recipt="1"></span>100 г сүтті шоколад </li>
+            <li><span recipt="0.2"></span>200 мл кілегей </li>
+            <li><span recipt="0.3">5 г желатин + 30 мл су</span> </li>
+            <h5> Ақ шоколадты мусс:</h5>
+            <li><span recipt="1"></span>100 г ақ шоколад </li>
+            <li><span recipt="0.2"></span>200 мл кілегей </li>
+            <li><span recipt="0.3"></span>5 г желатин + 30 мл су
+            </li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Тирамису торты</h1>
+        <img src="https://i.pinimg.com/736x/37/5b/81/375b817bffd36d29d64ac820f03ea7c9.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button id="new" onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="4"></span>4 жұмыртқа </li>
+            <li><span recipt="1.2"></span>120 г қант</li>
+            <li><span recipt="1"></span>100 г ұн </li>
+            <li><span recipt="0.02"></span>20 г жүгері крахмалы (міндетті емес) </li>
+            <li><span recipt="1"></span>1 шай қасық разрыхлитель</li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="2.5"></span>250 г маскарпоне </li>
+            <li><span recipt="0.8"></span> 80 г қант ұнтағы</li>
+            <li><span recipt="0.2"></span>200 мл кілегей (33-35%) </li>
+            <li><span recipt="1"></span>1 шай қасық ваниль сығындысы</li>
+            <h4>Сироп (Бисквитті сулау үшін):</h4>
+            <li><span recipt="0.15"></span>150 мл эспрессо немесе қою кофе </li>
+            <li><span recipt="1"></span>1 ас қасық қант </li>
+            <li><span recipt="0.5"></span>2 ас қасық Марсала ликері (міндетті емес) </li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Еклер</h1>
+        <img src="https://i.pinimg.com/736x/3f/bc/59/3fbc59c49b3d9b9919ae289e52b51549.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="1.5"></span>150 мл су </li>
+            <li><span recipt="0.1"></span>100 мл сүт </li>
+            <li><span recipt="1"></span>100 г сары май </li>
+            <li><span recipt="1"></span>1/4 шай қасық тұз </li>
+            <li><span recipt="1"></span>1 ас қасық қант </li>
+            <li><span recipt="1.5"></span>150 г ұн </li>
+            <li><span recipt="4"></span>4 жұмыртқа </li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="0.5"></span>500 мл сүт</li>
+            <li><span recipt="1.5"></span>150 г қант </li>
+            <li><span recipt="3"></span>3 жұмыртқаның сарысы </li>
+            <li><span recipt="0.4"></span>40 г жүгері крахмалы (немесе 50 г ұн) </li>
+            <li><span recipt="1"></span>1 шай қасық ваниль </li>
+            <h4>Глазурь:</h4>
+            <li><span recipt="1"></span>100 г қара шоколад </li>
+            <li><span recipt="0.05"></span>50 мл кілегей </li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Заварное тесто </h1>
+        <img src="https://i.pinimg.com/736x/8a/dd/d2/8addd2a99d46e617965afae950811d75.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="1.5"></span>150 мл су </li>
+            <li><span recipt="0.1"></span>100 мл сүт </li>
+            <li><span recipt="1"></span>100 г сары май </li>
+            <li><span recipt="1"></span>1/4 шай қасық тұз </li>
+            <li><span recipt="1"></span>1 ас қасық қант </li>
+            <li><span recipt="1.5"></span>150 г ұн </li>
+            <li><span recipt="4"></span>4 жұмыртқа </li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="0.5"></span>500 мл сүт</li>
+            <li><span recipt="1.5"></span>150 г қант </li>
+            <li><span recipt="3"></span>3 жұмыртқаның сарысы </li>
+            <li><span recipt="0.4"></span>40 г жүгері крахмалы (немесе 50 г ұн) </li>
+            <li><span recipt="1"></span>1 шай қасық ваниль </li>
+            <h4>Глазурь:</h4>
+            <li><span recipt="1"></span>100 г қара шоколад </li>
+            <li><span recipt="0.05"></span>50 мл кілегей </li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Еклер</h1>
+        <img src="https://i.pinimg.com/736x/20/d5/35/20d535f4ed828ccea5c34279b869a100.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="1.5"></span>150 мл су </li>
+            <li><span recipt="0.1"></span>100 мл сүт </li>
+            <li><span recipt="1"></span>100 г сары май </li>
+            <li><span recipt="1"></span>1/4 шай қасық тұз </li>
+            <li><span recipt="1"></span>1 ас қасық қант </li>
+            <li><span recipt="1.5"></span>150 г ұн </li>
+            <li><span recipt="4"></span>4 жұмыртқа </li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="0.5"></span>500 мл сүт</li>
+            <li><span recipt="1.5"></span>150 г қант </li>
+            <li><span recipt="3"></span>3 жұмыртқаның сарысы </li>
+            <li><span recipt="0.4"></span>40 г жүгері крахмалы (немесе 50 г ұн) </li>
+            <li><span recipt="1"></span>1 шай қасық ваниль </li>
+            <h4>Глазурь:</h4>
+            <li><span recipt="1"></span>100 г қара шоколад </li>
+            <li><span recipt="0.05"></span>50 мл кілегей </li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Медовик</h1>
+        <img src="https://i.pinimg.com/736x/9d/7b/e9/9d7be998c7d19487f8756c1672d5b03f.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="1"></span>100 г сары май </li>
+            <li><span recipt="1.5"></span>150 г қант </li>
+            <li><span recipt="2"></span>2 ас қасық бал </li>
+            <li><span recipt="1"></span>1 шай қасық сода </li>
+            <li><span recipt="2"></span>2 жұмыртқа </li>
+            <li><span recipt="3.5"></span>350 г ұн </li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="5"></span>500 г қаймақ (20-25%) </li>
+            <li><span recipt="1"></span>100 г қант ұнтағы </li>
+            <li><span recipt="2"></span>200 г қоюлатылған сүт (сгущенка) </li>
+            <li><span recipt="1"></span>1 шай қасық ваниль </li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Қарақат қосылған торты</h1>
+        <img src="https://i.pinimg.com/736x/8e/4f/5c/8e4f5cf080320f71d98162c44fad4ca1.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="4"></span>4 жұмыртқа </li>
+            <li><span recipt="1.5"></span>150 г қант </li>
+            <li><span recipt="1.5"></span>150 г ұн </li>
+            <li><span recipt="1"></span>1 шай қасық разрыхлитель </li>
+            <li><span recipt="1"></span>1 шай қасық ваниль</li>
+            <h3>Кремге</h3>
+            <li><span recipt="0.5"></span>50 г кілегейлі ірімшік (маскарпоне немесе филадельфия) </li>
+            <li><span recipt="1"></span>100 г қант ұнтағы </li>
+            <li><span recipt="0.2"></span>200 мл кілегей (33-35%) </li>
+            <li><span recipt="1"></span>1 шай қасық ваниль </li>
+            <li><span recipt="2"></span>200 г қарақат (жаңа немесе мұздатылған) </li>
+            <li><span recipt="2"></span>2 ас қасық қант</li>
+            <li><span recipt="1"></span>1 шай қасық жүгері крахмалы </li>
+            <li><span recipt="2"></span>200 г қарақат (жаңа немесе мұздатылған) </li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1></h1>
+        <img src="https://i.pinimg.com/736x/90/57/8c/90578c224a2c2a8c18d25a28bc095823.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="0.5"></span>500 мл сүт </li>
+            <li><span recipt="">3</span>3 жұмыртқа </li>
+            <li><span recipt="">2</span>2 ас қасық қант </li>
+            <li><span recipt="1"></span>1 шай қасық ваниль </li>
+            <li><span recipt="2"></span>200 г ұн </li>
+            <li><span recipt="1"></span> 1 ас қасық өсімдік майы</li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="1.5"></span>250 г маскарпоне (немесе қаймақ – 20%) </li>
+            <li><span recipt="2"></span>200 мл кілегей (33-35%) </li>
+            <li><span recipt="1"></span>100 г қант ұнтағы </li>
+    
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <div class="container">
+        <h1>Вупи Пай торты</h1>
+        <img src="https://i.pinimg.com/736x/1c/cc/df/1cccdf4d4e987f8bb8dac14cc23f4335.jpg" alt="">
+        <label for="servings">Порция саны:</label>
+        <input type="number" id="servings" value="4" min="1">
+        <button onclick="updateRecipe()">Жаңарту</button>
+        <h2>Құрамы:</h2>
+        <ul id="ingredients-list">
+            <li><span recipt="1"></span>100 г сары май (жұмсарған) </li>
+            <li><span recipt="1"></span>150 г қант </li>
+            <li><span recipt="1"></span>1 жұмыртқа </li>
+            <li><span recipt="2.5"></span>250 мл сүт </li>
+            <li><span recipt="2.5"></span>250 г ұн </li>
+            <li><span recipt="0.05"></span>50 г какао ұнтағы </li>
+            <li><span recipt="1"></span>1 шай қасық разрыхлитель </li>
+            <li><span recipt="1"></span>½ шай қасық сода</li>
+            <li><span recipt="1"></span>1 шай қасық ванильді қант </li>
+            
+            <h3>Кремге</h3>
+            <li><span recipt="2"></span>200 мл қоюлатылған сүт </li>
+            <li><span recipt="1.5"></span>150 г сары май (жұмсарған) </li>
+            <li><span recipt="1"></span>100 г крем-сыр (Филадельфия немесе Маскарпоне) </li>
+        </ul>
+        <button>Дайындалу әдісін көргіңіз келсе</button>
+    </div>
+    <script src="index.js"></script>
+
+    
+</body>
+</html>

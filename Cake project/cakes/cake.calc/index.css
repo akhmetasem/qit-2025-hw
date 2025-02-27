@@ -1,0 +1,95 @@
+body{
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.pinimg.com/736x/d3/54/32/d35432904f31d87cf54c5b552d01336d.jpg");
+}
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 6px rgba(177, 166, 166, 0.1);
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d35400;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a771c;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #d35400; 
+    transform: scale(1.1);
+}
+.container {
+    margin-top: 300px;
+    width: 300px;
+    margin-top: 100px;
+    background-color: rgb(7, 116, 49);
+    border-radius: 10px;
+}
+.contButton {
+    background-color: rgb(66, 66, 66);
+    height: 350px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8px;
+    padding: 15px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+input {
+    background-color: rgb(11, 139, 65);
+    border: none;
+    width: 256px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+button {
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(96, 95, 95);
+    font-size: 20px;
+}
+.gainsboro {
+    background-color: rgb(144, 144, 144);
+}
+.orange {
+    background-color: rgb(241, 103, 10);
+}
+.green {
+    background-color: rgb(11, 139, 65);
+}

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d35400;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a771c;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #d35400; 
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#registerForm{
+    display: flex;
+    flex-direction: column;
+    background: rgb(85, 146, 95);
+    padding: 20px 15px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#registerForm input[type='text']{
+    width: 300px;
+    height: 30px;
+}
+.arrow { 
+    position: flex; 
+    top: 70vh; 
+    left: 3%; 
+    width: 40px; 
+    background: white; 
+    padding: 10px; 
+    border-radius: 100%; 
+    transition: all 0.5s; 
+} 
+.box { 
+    font-size: 20px; 
+    width: 500px; 
+    padding: 10px; 
+    background-color: rgb(176, 164, 187); 
+    margin: 0 auto; 
+}
+main{
+    background-color: rgb(211, 211, 211);
+}

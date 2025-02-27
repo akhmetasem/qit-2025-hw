@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cake.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="emage.jpg" alt="">
+            <h1>SWITE_CAKE</h1>
+        </div>
+        <nav class="navbar">
+            <a href="../cake.card/index.html">Сake shop🛒</a>
+            <a href="../cake.list/index.html">Recipe📝</a>
+            <a href="../cake.input/index.html">Blogs✍️</a>
+            <a href="../cake.calc/index.html">SweetCalc✨ </a>
+            <a href="../cake.card/index.html">Sweetry 🍰</a>
+            <a href="../cake.zakaz/cake.html">Orderify 🛍️</a>
+            <a href="../cake.recipt/index.html">Recipt📝</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div id="errorMessage">
+                
+            </div>
+            <form id="registerForm">
+                <h1>Заявка</h1>
+                <input type="text" placeholder="Имя" id="name">
+                <input type="text" placeholder="Фамилия" id="surname">
+    
+                <h2>Ваш пол</h2>
+                <label for="gender"><input type="radio" name="gender" id="gender" value="male">Мужской</label>
+                <label for="gender"><input type="radio" name="gender" id="gender" value="male">Женский</label>
+                <select id="time">
+                    <option value="morning">Утро</option>
+                    <option value="evening">Вечером</option>
+                </select>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+    <script src="cake.js"></script>
+</body>
+</html>
